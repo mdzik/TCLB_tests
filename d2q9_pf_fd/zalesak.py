@@ -18,7 +18,7 @@ def setSwirl(*args):
 
     R = np.sqrt(X**2 + Y**2)
     phi = np.arctan2(X,Y)
-    c = (L * np.pi / 5000) *(1 - np.tanh(10*(R-0.8)))
+    c = (L * np.pi / 50000) *(1 - np.tanh(10*(R-0.8)))
 
     Fx[:,:] = c*R*np.cos(phi)
     Fy[:,:] = -c*R*np.sin(phi)
